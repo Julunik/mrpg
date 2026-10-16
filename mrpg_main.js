@@ -6,7 +6,7 @@ function Clicked(){
     console.log("LOGO CLICKED!");
 }
 
-fetch("https://julunik.github.io/main/mrpg/latest.json")
+fetch("latest.json")
     .then(response => {
         if (!response.ok) throw new Error("Unable to download JSON");
         return response.json();
@@ -19,4 +19,4 @@ fetch("https://julunik.github.io/main/mrpg/latest.json")
         console.error(error);
     });
 
-console.log("Site Version: 13");
+console.log("Site Version: 14");
